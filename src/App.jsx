@@ -224,11 +224,14 @@ export default function App() {
           <div className="logo-badge">⚡</div>
           <div className="brand-info">
             <h1>TaskPulse Hub</h1>
-            <p>React (Vite) Frontend + Next.js (App Router) Backend</p>
+            <p>React (Vite) Frontend + Next.js (App Router) Backend • 🚀 Webhook Test v1.0.1</p>
           </div>
         </div>
 
         <div className="stack-pills">
+          <span className="pill" style={{ background: 'rgba(16, 185, 129, 0.15)', color: '#34d399', border: '1px solid #10b981' }}>
+            🚀 Webhook Trigger: v1.0.1
+          </span>
           <span className="pill pill-react">⚛️ Vite :5173</span>
           <span className="pill pill-next">▲ Next.js API :3001</span>
         </div>

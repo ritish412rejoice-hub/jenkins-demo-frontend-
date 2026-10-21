@@ -1,0 +1,15 @@
+cd /c/Apps/dailywealth4u/dailywealth4u-webapp
+pm2 start ./node_modules/next/dist/bin/next --name "dailywealth4u-web" --interpreter node -- start -p 3000
+
+cd /c/Apps/dailywealth4u/dailywealth4u-admin-panel
+pm2 start ./node_modules/next/dist/bin/next --name "dailywealth4u-admin" --interpreter node -- start -p 3001
+
+cd /c/Apps/dailywealth4u/dailywealth4you-strapi
+PORT=3006 pm2 start ./node_modules/@strapi/strapi/bin/strapi.js --name "dailywealth4u-strapi" --interpreter node -- start
+
+cd /c/Apps/dailwealth4u/dailywealth4you-landingpage 
+pm2 start ./node_modules/next/dist/bin/next --name "dailywealth4u-landingpage" --interpreter node -- start -p 3005
+
+Node v 22.17.0
+cd /c/Apps/dailwealth4u/dailyweath4u-api
+pm2 start src/index.js --name "dailywealth4u-api"
